@@ -4,7 +4,7 @@
 
 ## Delegation key points
 
-- **There are 2 types of power: voting power and proposition power**. Therefore, there are 2 types of delegation.
+- **There are 2 types of power: voting and proposition**. Therefore, there are 2 types of delegation.
 - **Both delegations are completely independent**; you can delegate your voting power to an address, while you delegate your proposition power to another address.
 - **Delegation is splitted by token (AAVE/stkAAVE)**, totalling 4 types at the moment, completely independent: voting and proposition powers of AAVE; voting and proposition power of stkAAVE.
 - **You can't delegate partially one type of power; you delegate all the power you have (balance) of 1 type of 1 token**. This means that for example, if you have 100 AAVE balance, you can only delegate 100 voting power to address X, not less. Of course, you can delegate at the same time 100 proposition power to another address Y.
@@ -13,6 +13,7 @@
 - **To vote on a proposal P, the wallet address from where you want to vote should have voting power (balance or delegation of voting) before the proposal is created**; this is called doing a "snapshot". After the proposal is open to vote, you can freely move your tokens, or give delegation of voting to somebody else, as you will still be able to vote on proposal P, or if you already voted, it will remain valid.
 - **Proposition power is required to create a proposal, not to vote**. If you have proposition power and create a proposal (or give proposition delegation to somebody who does it), different to voting, **you MUST keep the proposition power on the wallet that created the proposal during the whole proposal duration**. If the wallet at any point has less proposition than the threshold required for creation, anybody could cancel the proposal.
 - **It is possible to delegate both proposition and voting power at the same time to the same recipient, but it is not so recommended**: you give proposition power to somebody that has the ability to propose something; you give delegation to somebody you trust to vote on your behalf.
+- **Transferring out tokens from your wallet means that the power (of any type) you have, including what you are delegated, will be reduced by the amount transferred out**.
 
 <br>
 
